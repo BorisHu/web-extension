@@ -1,22 +1,24 @@
 {
-    "manifest_version": 2,
-
-    "name": "Stealth Mode",
-    "description": "Bye",
+    "name": "Stealth",
+    "description": "1 click shortcut to toggle between incognito.",
     "version": "1.0",
-
+    "manifest_version": 2,
     "browser_action": {
-        "default_icon": "icon.png"
+    "default_icon": "icon.png"
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
     },
 
     "permissions": [
-        "browsingData", "tabs", "contextMenus"
-      ],
-    
-    "incognito": "spanning",
-    
-    "background": {
-        "scripts": ["background.js"],
-        "persistant": false
+        "tabs", "history"
+    ],
+
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
     }
-}
+  }
+  
