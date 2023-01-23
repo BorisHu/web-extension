@@ -1,6 +1,6 @@
 {
     "name": "Stealth",
-    "description": "1 click shortcut to toggle between incognito.",
+    "description": "Click the button to move current tab to incognito and delete history of this tab.",
     "version": "1.0",
     "manifest_version": 2,
     "browser_action": {
