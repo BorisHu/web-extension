@@ -3,7 +3,7 @@ chrome.browserAction.onClicked.addListener(function ({ url }) {
     url,
     incognito: true,
   });
-  chrome.history.deleteUrl({
+  chrome.history.deleteUrl(
     url
-  })
+  )
 });
